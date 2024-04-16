@@ -26,7 +26,7 @@
 				<li><a href="#" class="nav-link px-3">서재</a></li>
 			</ul>
 			<div class="col-md-3 text-end">
-				<button class="btn btn-primary p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">로그인</button>
+				<button class="btn btn-primary p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">로그아웃</button>
 			</div>
 			<div class="offcanvas offcanvas-end" id="offcanvasRight">
 				<div class="offcanvas-header">
