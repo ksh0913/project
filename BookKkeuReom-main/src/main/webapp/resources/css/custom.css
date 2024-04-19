@@ -15,14 +15,14 @@ li {
 }
 
 header .nav-link {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
-  color: #404040;
+  color: #333333;
 }
 
 header .nav-link:hover {
   font-weight: 700;
-  color: #404040;
+  color: #333333;
 }
 
 .btn-primary {
@@ -30,8 +30,8 @@ header .nav-link:hover {
   --bs-btn-border-color: #ff7366;
   --bs-btn-hover-bg: #ff7366;
   --bs-btn-hover-border-color: #ff7366;
-  --bs-btn-active-bg: #404040;
-  --bs-btn-active-border-color: #404040;
+  --bs-btn-active-bg: #333333;
+  --bs-btn-active-border-color: #333333;
   font-size: 14px;
   line-height: 30px;
   width: 70px;
@@ -99,11 +99,11 @@ header .nav-link:hover {
 
 .nav-underline .nav-link {
   padding-top: 9px;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
   border-bottom: 3px solid #ff7366;
   font-size: 18px;
   font-weight: 500;
-  color: #404040;
+  color: #333333;
 }
 
 .nav-underline .nav-link:hover {
@@ -145,10 +145,10 @@ header .nav-link:hover {
 }
 
 .btn-secondary {
-  --bs-btn-color: #404040;
+  --bs-btn-color: #333333;
   --bs-btn-bg: white;
   --bs-btn-border-color: #ff7366;
-  --bs-btn-hover-color: #404040;
+  --bs-btn-hover-color: #333333;
   --bs-btn-hover-bg: white;
   --bs-btn-hover-border-color: #ff7366;
   --bs-btn-active-color: white;
@@ -159,16 +159,51 @@ header .nav-link:hover {
 }
 
 .text-body-emphasis {
-  --bs-emphasis-color: #404040;
+  --bs-emphasis-color: #333333;
+  font-size: 22px;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+#new-card-1 {
+  position: relative;
+}
+
+#new-card-1::before {
+  content: "";
+  background: url(../img/playlist04.0d6c80e7ef4bc7bf5ffb7f2d186420fe.jpg);
+  background-size: cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 1rem;
 }
 
 .card-title {
-  color: #404040;
+  color: #333333;
+  font-size: 22px;
   line-height: 1.4;
+  position: relative;
 }
 
 .card-img {
   width: 160px;
+  position: relative;
+}
+
+.card-text {
+  font-weight: 500;
+  position: relative;
+}
+
+.btn-group {
+  --bs-border-radius: 0.5rem;
+  position: relative;
 }
 
 #best {

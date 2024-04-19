@@ -7,9 +7,9 @@
 <title>북끄럼</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 <link href="./resources/css/custom.css?ver" rel="stylesheet" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js" integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -49,7 +49,7 @@
 		</header>
 
 		<nav class="navbar py-0 justify-content-start">
-			<button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" data-bs-dismiss="modal" onclick="changeToggler()">
+			<button class="navbar-toggler ps-0" type="button" data-bs-toggle="modal" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" data-bs-dismiss="modal" onclick="changeToggler()">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="modal fade" id="navbarToggler" aria-labelledby="navbarTogglerLabel" aria-hidden="true">
@@ -144,24 +144,16 @@
 			<h4 class="text-body-emphasis mb-3">이번 주 주목할 신간</h4>
 			<div class="row g-3">
 				<div class="col">
-					<div class="card shadow">
-						<div class="card-body">
-							<h4 class="card-title mt-3 mb-4">
-								[독점] 미국 아마존 <br /> 이달의 최고의 책 선정 도서
-							</h4>
+					<div id="new-card-1" class="card shadow">
+						<div class="card-body p-4">
+							<h4 id="new-title-1" class="card-title mt-3 mb-4 pb-2"></h4>
 							<div class="text-center">
-								<svg class="bd-placeholder-img card-img" height="224" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599" />
-									</svg>
-							</div>
-							<div class="text-center">
-								<p class="card-text m-4">
-									마인드 마이너 송길영 추천 <br /> 유튜브의 20년 비하인드 히스토리
-								</p>
-								<div class="btn-group mb-3">
-									<button type="button" class="btn btn-outline-secondary">경제경영</button>
-									<button type="button" class="btn btn-outline-secondary">유튜브</button>
-									<button type="button" class="btn btn-outline-secondary">트렌드</button>
+								<img src="" id="new-cover-1" class="card-img" height="224"> </img>
+								<p id="new-author-1" class="card-text m-4"></p>
+								<div id="new-category-1" class="btn-group mb-3">
+									<button type="button" id="btn-1" class="btn btn-outline-secondary"></button>
+									<button type="button" id="btn-2" class="btn btn-outline-secondary"></button>
+									<button type="button" id="btn-3" class="btn btn-outline-secondary"></button>
 								</div>
 							</div>
 						</div>
@@ -169,23 +161,15 @@
 				</div>
 				<div class="col">
 					<div class="card shadow">
-						<div class="card-body">
-							<h4 class="card-title mt-3 mb-4">
-								[독점] 미국 아마존 <br /> 이달의 최고의 책 선정 도서
-							</h4>
+						<div class="card-body p-4">
+							<h4 id="new-title-2" class="card-title mt-3 mb-4 pb-2"></h4>
 							<div class="text-center">
-								<svg class="bd-placeholder-img card-img" height="224" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599" />
-									</svg>
-							</div>
-							<div class="text-center">
-								<p class="card-text m-4">
-									마인드 마이너 송길영 추천 <br /> 유튜브의 20년 비하인드 히스토리
-								</p>
-								<div class="btn-group mb-3">
-									<button type="button" class="btn btn-outline-secondary">경제경영</button>
-									<button type="button" class="btn btn-outline-secondary">유튜브</button>
-									<button type="button" class="btn btn-outline-secondary">트렌드</button>
+								<img src="" id="new-cover-2" class="card-img" height="224"> </img>
+								<p id="new-author-2" class="card-text m-4"></p>
+								<div id="new-category-2" class="btn-group mb-3">
+									<button type="button" id="btn-1" class="btn btn-outline-secondary"></button>
+									<button type="button" id="btn-2" class="btn btn-outline-secondary"></button>
+									<button type="button" id="btn-3" class="btn btn-outline-secondary"></button>
 								</div>
 							</div>
 						</div>
@@ -193,23 +177,15 @@
 				</div>
 				<div class="col">
 					<div class="card shadow">
-						<div class="card-body">
-							<h4 class="card-title mt-3 mb-4">
-								[독점] 미국 아마존 <br /> 이달의 최고의 책 선정 도서
-							</h4>
+						<div class="card-body p-4">
+							<h4 id="new-title-3" class="card-title mt-3 mb-4 pb-2"></h4>
 							<div class="text-center">
-								<svg class="bd-placeholder-img card-img" height="224" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599" />
-									</svg>
-							</div>
-							<div class="text-center">
-								<p class="card-text m-4">
-									마인드 마이너 송길영 추천 <br /> 유튜브의 20년 비하인드 히스토리
-								</p>
-								<div class="btn-group mb-3">
-									<button type="button" class="btn btn-outline-secondary">경제경영</button>
-									<button type="button" class="btn btn-outline-secondary">유튜브</button>
-									<button type="button" class="btn btn-outline-secondary">트렌드</button>
+								<img src="" id="new-cover-3" class="card-img" height="224"> </img>
+								<p id="new-author-3" class="card-text m-4"></p>
+								<div id="new-category-3" class="btn-group mb-3">
+									<button type="button" id="btn-1" class="btn btn-outline-secondary"></button>
+									<button type="button" id="btn-2" class="btn btn-outline-secondary"></button>
+									<button type="button" id="btn-3" class="btn btn-outline-secondary"></button>
 								</div>
 							</div>
 						</div>
@@ -553,6 +529,54 @@
 		$(".progress-bar").animate({
 			width : "100%",
 		}, 14000);
+	</script>
+	<script>
+		$(function() {
+			$(document)
+					.ready(
+							function() {
+								$
+										.ajax({
+											url : "newBook.do",
+											success : function(result) {
+												const itemArr = result.item;
+												let value = "";
+												for (let i = 0; i < itemArr.length; i++) {
+													let item = itemArr[i];
+													value = item.title.split(
+															'-', 1);
+													$(
+															"#new-title-"
+																	+ (parseInt(i) + 1))
+															.html(value);
+													value = item.cover;
+													$(
+															"#new-cover-"
+																	+ (parseInt(i) + 1))
+															.attr("src",
+																	item.cover);
+													value = item.author;
+													$(
+															"#new-author-"
+																	+ (parseInt(i) + 1))
+															.html(item.author);
+													const categoryArr = item.categoryName
+															.split('>', 3);
+													for (let j = 0; j < categoryArr.length; j++) {
+														value = categoryArr[j];
+														$(
+																"#new-category-"
+																		+ (parseInt(i) + 1)
+																		+ " "
+																		+ "#btn-"
+																		+ (parseInt(j) + 1))
+																.html(value);
+													}
+												}
+											}
+										})
+							})
+		})
 	</script>
 </body>
 
