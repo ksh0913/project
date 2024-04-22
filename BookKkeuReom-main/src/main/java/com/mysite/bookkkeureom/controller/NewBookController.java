@@ -26,7 +26,7 @@ public class NewBookController {
 		url += "&SearchTarget=Book";
 		url += "&output=js";
 		url += "&Version=20131101";
-//		System.out.println(url);
+		System.out.println(url);
 
 		URL requestUrl = new URL(url);
 		HttpURLConnection urlConnection = (HttpURLConnection) requestUrl.openConnection();

@@ -13,10 +13,10 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container g-5">
 		<header class="d-flex align-items-center justify-content-center py-2 border-bottom">
 			<div class="col-3 mb-0">
-				<a class="navbar-brand" href="#"> <img src="./resources/img/logo.svg" alt="BOOKKKEUREOM" width="80" height="35" />
+				<a class="navbar-brand" href="#"> <img src="./resources/img/logo.svg" alt="BOOKKKEUREOM" width="64" height="28" />
 				</a>
 			</div>
 			<ul class="nav col-6 col-auto justify-content-center mb-0">
@@ -39,9 +39,9 @@
 						<li class="mb-3"><a id="kakao-login-btn" href="javascript:loginWithKakao()"> <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="183" alt="카카오 로그인 버튼" />
 						</a>
 							<p id="token-result"></p></li>
-						<li class="mb-3"><a id="naver-login-btn"> <img src="./resources/img/btnG_완성형.png" width="183" alt="네이버 로그인 버튼" />
+						<li class="mb-3"><a id="naver-login-btn"> <img src="./resources/img/btnG_완성형.svg" width="183" alt="네이버 로그인 버튼" />
 						</a></li>
-						<li class="mb-3"><a id="google-login-btn"> <img src="./resources/img/web_light_sq_SI@4x.png" width="183" alt="구글 로그인 버튼" />
+						<li class="mb-3"><a id="google-login-btn"> <img src="./resources/img/web_light_sq_SI.svg" width="183" alt="구글 로그인 버튼" />
 						</a></li>
 					</ul>
 				</div>
@@ -52,7 +52,7 @@
 			<button class="navbar-toggler ps-0" type="button" data-bs-toggle="modal" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" data-bs-dismiss="modal" onclick="changeToggler()">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="modal fade" id="navbarToggler" aria-labelledby="navbarTogglerLabel" aria-hidden="true">
+			<div class="modal fade m-0" id="navbarToggler" aria-labelledby="navbarTogglerLabel" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-scrollable">
 					<div class="modal-content">
 						<div class="modal-header pt-4 pb-2">
@@ -91,6 +91,35 @@
 		</nav>
 
 		<div id="mainbanner" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<svg class="bd-placeholder-img d-block w-100 bg-gradient" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" style="background: rgb(178, 120, 77);">
+						</svg>
+					<div class="heroimg"></div>
+					<div class="carousel-caption text-start">
+						<h5>First slide label</h5>
+						<p class="opacity-80">Some representative placeholder content for the first slide.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<svg class="bd-placeholder-img d-block w-100 bg-gradient" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" style="background: rgb(128, 103, 182);">
+						</svg>
+					<div class="heroimg"></div>
+					<div class="carousel-caption text-start">
+						<h5>Second slide label</h5>
+						<p class="opacity-80">Some representative placeholder content for the second slide.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<svg class="bd-placeholder-img d-block w-100 bg-gradient" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" style="background: rgb(209, 102, 134);">
+						</svg>
+					<div class="heroimg"></div>
+					<div class="carousel-caption text-start">
+						<h5>Third slide label</h5>
+						<p class="opacity-80">Some representative placeholder content for the third slide.</p>
+					</div>
+				</div>
+			</div>
 			<div class="carousel-indicators justify-content-start ms-0">
 				<div class="progress align-self-center me-3" role="progressbar" aria-label="Progress bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
 					<div class="progress-bar" style="width: 0%"></div>
@@ -99,93 +128,72 @@
 				<button type="button" data-bs-target="#mainbanner" data-bs-slide-to="1" aria-label="Slide 2">2</button>
 				<button type="button" data-bs-target="#mainbanner" data-bs-slide-to="2" aria-label="Slide 3">3</button>
 			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 bg-warning bg-gradient" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-						</svg>
-					<div class="carousel-caption text-start">
-						<h5>First slide label</h5>
-						<p class="opacity-80">Some representative placeholder content for the first slide.</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 bg-danger bg-gradient" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-						</svg>
-					<div class="carousel-caption text-start">
-						<h5>Second slide label</h5>
-						<p class="opacity-80">Some representative placeholder content for the second slide.</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 bg-success bg-gradient" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-						</svg>
-					<div class="carousel-caption text-start">
-						<h5>Third slide label</h5>
-						<p class="opacity-80">Some representative placeholder content for the third slide.</p>
-					</div>
-				</div>
-			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#mainbanner" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span>
 			</button>
 			<button class="carousel-control-next" type="button" data-bs-target="#mainbanner" data-bs-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span>
 			</button>
-			<div class="heroimg"></div>
 		</div>
 
-		<div class="d-flex gap-2 justify-content-start my-5">
+		<div id="favorite" class="d-flex gap-2 justify-content-start">
 			<button class="btn btn-secondary rounded-pill" type="button">자기계발 ></button>
 			<button class="btn btn-secondary rounded-pill" type="button">에세이 ></button>
 			<button class="btn btn-secondary rounded-pill" type="button">소설 ></button>
 		</div>
 
-		<div class="album mb-5">
+		<div id="new" class="album mb-5">
 			<h4 class="text-body-emphasis mb-3">이번 주 주목할 신간</h4>
-			<div class="row g-3">
+			<div class="row g-4">
 				<div class="col">
 					<div id="new-card-1" class="card shadow">
-						<div class="card-body p-4">
-							<h4 id="new-title-1" class="card-title mt-3 mb-4 pb-2"></h4>
-							<div class="text-center">
-								<img src="" id="new-cover-1" class="card-img" height="224"> </img>
-								<p id="new-author-1" class="card-text m-4"></p>
-								<div id="new-category-1" class="btn-group mb-3">
-									<button type="button" id="btn-1" class="btn btn-outline-secondary"></button>
-									<button type="button" id="btn-2" class="btn btn-outline-secondary"></button>
-									<button type="button" id="btn-3" class="btn btn-outline-secondary"></button>
+						<div class="card-header px-4 py-3 bg-gradient">
+							<h5 id="new-title-1" class="card-title mt-2 mb-1"></h5>
+						</div>
+						<div class="card-body px-0 py-4 text-center">
+							<img src="" id="new-cover-1" class="card-img shadow"></img>
+							<div class="text-bg-light mx-4 mt-4 mb-1 p-3 text-center">
+								<p id="new-author-1" class="card-text mb-2"></p>
+								<div id="new-category-1">
+									<button type="button" id="btn-1" class="btn btn-outline-secondary px-2 py-0 rounded-pill"></button>
+									<button type="button" id="btn-2" class="btn btn-outline-secondary px-2 py-0 rounded-pill"></button>
+									<button type="button" id="btn-3" class="btn btn-outline-secondary px-2 py-0 rounded-pill"></button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card shadow">
-						<div class="card-body p-4">
-							<h4 id="new-title-2" class="card-title mt-3 mb-4 pb-2"></h4>
-							<div class="text-center">
-								<img src="" id="new-cover-2" class="card-img" height="224"> </img>
-								<p id="new-author-2" class="card-text m-4"></p>
-								<div id="new-category-2" class="btn-group mb-3">
-									<button type="button" id="btn-1" class="btn btn-outline-secondary"></button>
-									<button type="button" id="btn-2" class="btn btn-outline-secondary"></button>
-									<button type="button" id="btn-3" class="btn btn-outline-secondary"></button>
+					<div id="new-card-2" class="card shadow">
+						<div class="card-header px-4 py-3 bg-gradient">
+							<h5 id="new-title-2" class="card-title mt-2 mb-1"></h5>
+						</div>
+						<div class="card-body px-0 py-4 text-center">
+							<img src="" id="new-cover-2" class="card-img shadow"></img>
+							<div class="text-bg-light mx-4 mt-4 mb-1 p-3 text-center">
+								<p id="new-author-2" class="card-text mb-2"></p>
+								<div id="new-category-2">
+									<button type="button" id="btn-1" class="btn btn-outline-secondary px-2 py-0 rounded-pill"></button>
+									<button type="button" id="btn-2" class="btn btn-outline-secondary px-2 py-0 rounded-pill"></button>
+									<button type="button" id="btn-3" class="btn btn-outline-secondary px-2 py-0 rounded-pill"></button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card shadow">
-						<div class="card-body p-4">
-							<h4 id="new-title-3" class="card-title mt-3 mb-4 pb-2"></h4>
-							<div class="text-center">
-								<img src="" id="new-cover-3" class="card-img" height="224"> </img>
-								<p id="new-author-3" class="card-text m-4"></p>
-								<div id="new-category-3" class="btn-group mb-3">
-									<button type="button" id="btn-1" class="btn btn-outline-secondary"></button>
-									<button type="button" id="btn-2" class="btn btn-outline-secondary"></button>
-									<button type="button" id="btn-3" class="btn btn-outline-secondary"></button>
+					<div id="new-card-3" class="card shadow">
+						<div class="card-header px-4 py-3 bg-gradient">
+							<h5 id="new-title-3" class="card-title mt-2 mb-1"></h5>
+						</div>
+						<div class="card-body px-0 py-4 text-center">
+							<img src="" id="new-cover-3" class="card-img shadow"></img>
+							<div class="text-bg-light mx-4 mt-4 mb-1 p-3 text-center">
+								<p id="new-author-3" class="card-text mb-2"></p>
+								<div id="new-category-3">
+									<button type="button" id="btn-1" class="btn btn-outline-secondary px-2 py-0 rounded-pill"></button>
+									<button type="button" id="btn-2" class="btn btn-outline-secondary px-2 py-0 rounded-pill"></button>
+									<button type="button" id="btn-3" class="btn btn-outline-secondary px-2 py-0 rounded-pill"></button>
 								</div>
 							</div>
 						</div>
@@ -198,21 +206,19 @@
 			<h4 class="text-body-emphasis mb-3">지금! 서점 베스트</h4>
 			<div class="row g-3">
 				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
+					<div class="card mb-3" style="height: 132px;">
 						<div class="row g-0">
 							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
+								<img src="" id="best-cover-1" class="card-img"></img>
 							</div>
 							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
+								<h5 id="best-rank-1" class="card-title mb-0"></h5>
 							</div>
 							<div class="col-6 align-self-center">
 								<div class="card-body">
-									<p class="card-text mb-0">This</p>
+									<p id="best-title-1" class="card-text mb-1"></p>
 									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
+										<small id="best-author-1" class="text-body-secondary"></small>
 									</p>
 								</div>
 							</div>
@@ -220,21 +226,19 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
+					<div class="card mb-3" style="height: 132px;">
 						<div class="row g-0">
 							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
+								<img src="" id="best-cover-4" class="card-img"></img>
 							</div>
 							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
+								<h5 id="best-rank-4" class="card-title mb-0"></h5>
 							</div>
 							<div class="col-6 align-self-center">
 								<div class="card-body">
-									<p class="card-text mb-0">This</p>
+									<p id="best-title-4" class="card-text mb-1"></p>
 									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
+										<small id="best-author-4" class="text-body-secondary"></small>
 									</p>
 								</div>
 							</div>
@@ -242,21 +246,19 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
+					<div class="card mb-3" style="height: 132px;">
 						<div class="row g-0">
 							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
+								<img src="" id="best-cover-7" class="card-img"></img>
 							</div>
 							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
+								<h5 id="best-rank-7" class="card-title mb-0"></h5>
 							</div>
 							<div class="col-6 align-self-center">
 								<div class="card-body">
-									<p class="card-text mb-0">This</p>
+									<p id="best-title-7" class="card-text mb-1"></p>
 									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
+										<small id="best-author-7" class="text-body-secondary"></small>
 									</p>
 								</div>
 							</div>
@@ -264,201 +266,19 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
+					<div class="card mb-3" style="height: 132px;">
 						<div class="row g-0">
 							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
+								<img src="" id="best-cover-10" class="card-img"></img>
 							</div>
 							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
+								<h5 id="best-rank-10" class="card-title mb-0"></h5>
 							</div>
 							<div class="col-6 align-self-center">
 								<div class="card-body">
-									<p class="card-text mb-0">This</p>
+									<p id="best-title-10" class="card-text mb-1"></p>
 									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row g-3">
-				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
-						<div class="row g-0">
-							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
-							</div>
-							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
-							</div>
-							<div class="col-6 align-self-center">
-								<div class="card-body">
-									<p class="card-text mb-0">This</p>
-									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
-						<div class="row g-0">
-							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
-							</div>
-							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
-							</div>
-							<div class="col-6 align-self-center">
-								<div class="card-body">
-									<p class="card-text mb-0">This</p>
-									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
-						<div class="row g-0">
-							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
-							</div>
-							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
-							</div>
-							<div class="col-6 align-self-center">
-								<div class="card-body">
-									<p class="card-text mb-0">This</p>
-									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
-						<div class="row g-0">
-							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
-							</div>
-							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
-							</div>
-							<div class="col-6 align-self-center">
-								<div class="card-body">
-									<p class="card-text mb-0">This</p>
-									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row g-3">
-				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
-						<div class="row g-0">
-							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
-							</div>
-							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
-							</div>
-							<div class="col-6 align-self-center">
-								<div class="card-body">
-									<p class="card-text mb-0">This</p>
-									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
-						<div class="row g-0">
-							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
-							</div>
-							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
-							</div>
-							<div class="col-6 align-self-center">
-								<div class="card-body">
-									<p class="card-text mb-0">This</p>
-									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
-						<div class="row g-0">
-							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
-							</div>
-							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
-							</div>
-							<div class="col-6 align-self-center">
-								<div class="card-body">
-									<p class="card-text mb-0">This</p>
-									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card mb-3" style="height: 127px;">
-						<div class="row g-0">
-							<div class="col-4">
-								<svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="127" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-										<rect width="100%" height="100%" fill="#919599"></rect>
-									</svg>
-							</div>
-							<div class="col-2 text-center align-self-center">
-								<h5 class="card-title">1</h5>
-							</div>
-							<div class="col-6 align-self-center">
-								<div class="card-body">
-									<p class="card-text mb-0">This</p>
-									<p class="card-text">
-										<small class="text-body-secondary">Last</small>
+										<small id="best-author-10" class="text-body-secondary"></small>
 									</p>
 								</div>
 							</div>
@@ -468,7 +288,7 @@
 			</div>
 		</div>
 
-		<footer class="py-3 mt-4 border-top">
+		<footer class="py-4 mt-4 border-top">
 			<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
 					<symbol id="facebook" viewBox="0 0 16 16">
 						<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
@@ -482,102 +302,43 @@
 						<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
 					</symbol>
 				</svg>
-			<div class="d-flex flex-wrap justify-content-between align-items-center mt-3 mb-4">
+			<div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
 				<div class="col-4 d-flex align-items-center">
 					<a href="/" class="text-body-secondary text-decoration-none lh-1"> <img src="./resources/img/logo.svg" alt="BOOKKKEUREOM" width="68.5" height="30" />
 					</a>
 				</div>
-				<ul class="nav col-4 justify-content-end list-unstyled d-flex">
-					<li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+				<ul id="sns" class="nav col-4 justify-content-end d-flex">
+					<li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="18" height="18">
 									<use xlink:href="#twitter" />
 								</svg></a></li>
-					<li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+					<li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="18" height="18">
 									<use xlink:href="#instagram" />
 								</svg></a></li>
-					<li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+					<li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="18" height="18">
 									<use xlink:href="#facebook" />
 								</svg></a></li>
 				</ul>
 			</div>
-			<ul class="nav justify-content-start">
-				<li class="nav-item"><a href="#" class="nav-link pe-3 pb-1 text-body-secondary">이용약관 ></a></li>
-				<li class="nav-item"><a href="#" class="nav-link pe-3 pb-1 text-body-secondary">개인정보처리방침 ></a></li>
-				<li class="nav-item"><a href="#" class="nav-link pe-3 pb-1 text-body-secondary">청소년보호정책 ></a></li>
-				<li class="nav-item"><a href="#" class="nav-link pe-3 pb-1 text-body-secondary">고객센터 ></a></li>
-				<li class="nav-item"><a href="#" class="nav-link pe-3 pb-1 text-body-secondary">환불신청 ></a></li>
-				<li class="nav-item"><a href="#" class="nav-link pe-3 pb-1 text-body-secondary">B2B 문의 ></a></li>
-				<li class="nav-item"><a href="#" class="nav-link pe-3 pb-1 text-body-secondary">콘텐츠 제휴문의 ></a></li>
-				<li class="nav-item"><a href="#" class="nav-link pe-3 pb-1 text-body-secondary">저작권/도서오류 신고 ></a></li>
-				<li class="nav-item"><a href="#" class="nav-link pe-3 pb-1 text-body-secondary">종료 예정 도서 ></a></li>
-				<li class="nav-item"><a href="#" class="nav-link pe-3 pb-1 text-body-secondary">회사 소개 ></a></li>
+			<ul class="nav justify-content-start pt-1">
+				<li class="nav-item"><a href="#" class="nav-link ps-0 pe-3 py-0 text-body-secondary">이용약관 ></a></li>
+				<li class="nav-item"><a href="#" class="nav-link ps-0 pe-3 py-0 text-body-secondary">개인정보처리방침 ></a></li>
+				<li class="nav-item"><a href="#" class="nav-link ps-0 pe-3 py-0 text-body-secondary">청소년보호정책 ></a></li>
+				<li class="nav-item"><a href="#" class="nav-link ps-0 pe-3 py-0 text-body-secondary">고객센터 ></a></li>
+				<li class="nav-item"><a href="#" class="nav-link ps-0 pe-3 py-0 text-body-secondary">환불신청 ></a></li>
+				<li class="nav-item"><a href="#" class="nav-link ps-0 pe-3 py-0 text-body-secondary">B2B 문의 ></a></li>
+				<li class="nav-item"><a href="#" class="nav-link ps-0 pe-3 py-0 text-body-secondary">콘텐츠 제휴문의 ></a></li>
+				<li class="nav-item"><a href="#" class="nav-link ps-0 pe-3 py-0 text-body-secondary">저작권/도서오류 신고 ></a></li>
+				<li class="nav-item"><a href="#" class="nav-link ps-0 pe-3 py-0 text-body-secondary">종료 예정 도서 ></a></li>
+				<li class="nav-item"><a href="#" class="nav-link ps-0 pe-3 py-0 text-body-secondary">회사 소개 ></a></li>
 			</ul>
-			<p class="text-body-secondary my-3">&copy; 2024 북끄럼 All rights reserved.</p>
+			<p class="text-body-secondary mt-3 mb-0">&copy; 2024 북끄럼 All rights reserved.</p>
 		</footer>
 	</div>
 	<script src="./resources/js/kakao.js"></script>
-	<script>
-		function changeToggler() {
-			let togglerIcon = document.querySelector(".navbar-toggler-icon");
-			if (togglerIcon.classList.contains("active")) {
-				togglerIcon.classList.remove("active");
-			} else {
-				togglerIcon.classList.add("active");
-			}
-		}
-	</script>
-	<script>
-		$(".progress-bar").animate({
-			width : "100%",
-		}, 14000);
-	</script>
-	<script>
-		$(function() {
-			$(document)
-					.ready(
-							function() {
-								$
-										.ajax({
-											url : "newBook.do",
-											success : function(result) {
-												const itemArr = result.item;
-												let value = "";
-												for (let i = 0; i < itemArr.length; i++) {
-													let item = itemArr[i];
-													value = item.title.split(
-															'-', 1);
-													$(
-															"#new-title-"
-																	+ (parseInt(i) + 1))
-															.html(value);
-													value = item.cover;
-													$(
-															"#new-cover-"
-																	+ (parseInt(i) + 1))
-															.attr("src",
-																	item.cover);
-													value = item.author;
-													$(
-															"#new-author-"
-																	+ (parseInt(i) + 1))
-															.html(item.author);
-													const categoryArr = item.categoryName
-															.split('>', 3);
-													for (let j = 0; j < categoryArr.length; j++) {
-														value = categoryArr[j];
-														$(
-																"#new-category-"
-																		+ (parseInt(i) + 1)
-																		+ " "
-																		+ "#btn-"
-																		+ (parseInt(j) + 1))
-																.html(value);
-													}
-												}
-											}
-										})
-							})
-		})
-	</script>
+	<script src="./resources/js/changeToggler.js"></script>
+	<script src="./resources/js/progressBar.js"></script>
+	<script src="./resources/js/newBook.js"></script>
+	<script src="./resources/js/bestBook.js"></script>
 </body>
 
 </html>
