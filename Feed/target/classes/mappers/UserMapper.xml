@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kh.feed.mapper.UserMapper">
+
+	<!-- 회원 정보 결과 매핑 -->
+	<resultMap id="UserResultMap" type="com.kh.feed.DTO.UserDTO">
+		<id property="userId" column="USER_ID" />
+		<result property="pointId" column="POINT_ID" />
+		<result property="userImg" column="USER_IMG" />
+		<result property="userName" column="USER_NAME" />
+		<result property="userToUser" column="USER_TOUSER" />
+		<result property="userFromUser" column="USER_FROMUSER" />
+		<result property="userIdId" column="USER_IDI" />
+		<result property="userPw" column="USER_PW" />
+	</resultMap>
+
+	<!-- 회원가입 -->
+	<insert id="signUp" parameterType="com.kh.feed.DTO.UserDTO">
+		<selectKey keyProperty="userId" resultType="java.lang.Long"
+			order="BEFORE">
+			SELECT USER_SEQUENCE.NEXTVAL AS userId FROM dual
+		</selectKey>
+		INSERT INTO Users (USER_ID, USER_NAME, USER_IDI, USER_PW)
+		VALUES (#{userId}, #{userName}, #{userIdId}, #{userPw})
+	</insert>
+
+	<!-- 로그인 -->
+	<select id="loginUser" parameterType="com.kh.feed.DTO.UserDTO" resultMap="UserResultMap">
+		SELECT * FROM Users
+		WHERE USER_IDI = #{userIdId} AND USER_PW = #{userPw}
+	</select>
+
+	<!-- 프로필 조회 -->
+	<select id="getUserProfile"
+		parameterType="com.kh.feed.DTO.UserDTO" resultMap="UserResultMap">
+		SELECT * FROM Users
+		WHERE USER_ID = #{userId}
+	</select>
+
+	<!-- 프로필 수정 -->
+	<!-- <update id="updateUserProfile"
+		parameterType="com.kh.feed.DTO.UserDTO">
+		UPDATE Users
+		SET USER_IMG = #{userImg}, USER_NAME =
+		#{userName}, USER_PW = #{userPw}
+		WHERE USER_ID = #{userId}
+	</update> -->
+
+</mapper>
