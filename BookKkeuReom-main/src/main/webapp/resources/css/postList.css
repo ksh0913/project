@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f5f8fa;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #14171a;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.content ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    width: 600px;
+}
+
+.content li {
+    background-color: #fff;
+    border: 1px solid #e1e8ed;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.user-date-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center; /* 세로 방향으로 중앙 정렬 */
+    justify-content: flex-start; /* 가로 방향 정렬을 시작 부분으로 설정 */
+    gap: 10px; /* 요소 간 간격 */
+}
+
+.user-image, .user-icon {
+    width: 30px; /* 이미지와 아이콘의 너비 */
+    height: 30px; /* 이미지와 아이콘의 높이 */
+    border-radius: 50%; /* 원형 이미지 */
+    object-fit: cover; /* 컨테이너에 맞게 이미지 조정 */
+}
+
+.user-name {
+    font-size: 16px; /* 글꼴 크기 */
+    color: #14171a; /* 글자 색상 */
+    white-space: nowrap; /* 이름이 길 경우 줄바꿈 방지 */
+    margin: 0; /* 추가된 마진 제거 */
+    padding: 0; /* 추가된 패딩 제거 */
+    line-height: 30px; /* 라인 높이를 이미지 높이와 맞춤 */
+}
+
+.post-img img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px; /* 이미지를 약간 둥글게 */
+}
+
+.post-content h4, .post-content p {
+    margin: 10px 0;
+}
+
+.post-content {
+    padding: 10px 0; /* 내용 주변에 공간 추가 */
+}
+
+main form {
+    width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post-interaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 좌우 정렬을 위해 space-between 사용 */
+    width: 100%; /* 전체 너비 사용 */
+}
+
+.interaction-like, .interaction-comment {
+    display: flex;
+    align-items: center;
+    margin-right: 40px; /* 좋아요와 댓글 간의 오른쪽 여백 증가 */
+    font-size: 16px; /* 텍스트 크기 조정, 필요에 따라 조정 가능 */
+}
+
+.fa-heart, .fa-comment {
+    color: #ff007f; /* 다홍색 */
+    margin-right: 8px; /* 아이콘과 텍스트 사이의 여백 */
+    font-size: 30px; /* 아이콘 크기를 20px로 설정 */
+}
+
+.follow-button {
+    padding: 6px 12px;
+    background-color: #ff007f; /* 배경색을 다홍색으로 변경 */
+    color: white; /* 텍스트 색상을 흰색으로 유지 */
+    border: none;
+    border-radius: 5px; /* 버튼 모서리 둥글게 유지 */
+    cursor: pointer; /* 포인터 커서 유지 */
+    font-size: 14px; /* 글꼴 크기 유지 */
+    transition: background-color 0.3s; /* 배경색 변경 애니메이션 유지 */
+    margin-left: auto; /* 오른쪽 정렬 유지 */
+}
+
+.follow-button:hover {
+    background-color: #e6006f;
+}
